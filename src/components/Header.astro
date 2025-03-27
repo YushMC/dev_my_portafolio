@@ -1,0 +1,70 @@
+<header class="fl-btw">
+    <h2>JuanMen<span>Dev</span></h2>
+    <nav class="fl-btw">
+        <ul class="fl-btw">
+            <li class="active">
+                <a href="/">Inicio</a>
+                <hr>
+            </li>
+            <li>
+                <a href="#Proyectos">Proyectos</a>
+                <hr>
+            </li>
+            <li>
+                <a href="#Habilidades">Skills</a>
+                <hr>
+            </li>
+            <li>
+                <a href="#Sobre-Mi">Sobre Mí</a>
+                <hr>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header{
+        width: 100%;
+        margin:5px auto;
+        padding-block: 16px;
+        padding-inline: 10%;
+    }
+
+    nav{
+        width: fit-content;
+    }
+    ul{
+        list-style: none;
+    }
+
+    li{
+       padding-inline: 16px;
+       display: flex;
+       flex-direction: column;
+       gap: 5px;
+       
+       a{
+        color: var(--textColorWhite);
+       }
+
+       hr{
+        width: 0%;
+        height: 2px;
+        border: none;
+        background: var(--AcentColor);
+        transition: all 0.3s linear;
+       }
+
+       &:hover{
+
+        hr{
+            width: 100%;
+        }
+       }
+
+       &.active hr{
+        width: 100%;
+       }
+    }
+
+</style>

@@ -1,0 +1,101 @@
+:root {
+  --OneColor: #0d1b2a;
+  --TwoColor: #1b263b;
+  --TreeColor: #415a77;
+  --FourColor: #778da9;
+  --FiveColor: #e0e1dd;
+  --textColorWhite: #e9ecef;
+  --AcentColor: #722097;
+  --TrasnparentAcentColor: #5e0d8352;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--TwoColor);
+  font-family: system-ui;
+  color: var(--textColorWhite);
+}
+h1 > span,
+h3 > span,
+h4 > span,
+h5 > span,
+h2 > span {
+  color: var(--FiveColor);
+  position: relative;
+  margin-inline: 2px;
+
+  &::before {
+    content: "";
+    width: 110%;
+    height: 10px;
+    bottom: 1%;
+    left: -5%;
+    background: var(--AcentColor);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  transition: all 0.3s linear;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff52);
+  }
+}
+img {
+  transition: all 0.3s linear;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff52);
+  }
+}
+
+p {
+  width: 100%;
+  height: fit-content;
+  text-wrap: pretty;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+label:has(:focus:invalid) {
+  color: tomato;
+}
+
+label:has(:focus:valid) {
+  color: green;
+}
+
+label:has(:focus:valid) input {
+  outline-color: transparent;
+}
+
+label:has(:focus:invalid) input {
+  color: tomato;
+}
+
+textarea {
+  field-sizing: content;
+  max-height: 100px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+  &:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff77);
+  }
+}
