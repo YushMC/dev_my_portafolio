@@ -6,10 +6,14 @@
             <p>
                 <i>"La interacción y la satisfacción del usuario es lo más gratificante, sobre todo si el proceso lo haces tuyo".</i>
             </p>
-            <a href="#Proyectos" class="glass-effect">Ver Proyectos</a>
+            <div class="fl-btw">
+                <a href="#Proyectos" class="glass-effect"><i class="bi bi-window-stack"></i> Ver Proyectos</a>
+                <a href="https://github.com/YushMC" target="_blank" rel="external noopener noreferrer"><i class="bi bi-github"></i></a>
+            </div>
+            
         </aside>
         <picture class="fl-center">
-            <img class="img-aspect-1-1" src="https://juanmendev.com/logo.png" alt="Foto de JuanMenDev" loading="lazy">
+            <img class="img-aspect-1-1" src="/images/logo.webp" alt="Foto de JuanMenDev">
         </picture>
     </section>
 
@@ -17,9 +21,10 @@
 <style>
     section{
         width: 100%;
-        height: 50dvh;
-        
+        height: fit-content;
+        min-height: 80dvh;
         flex-wrap: wrap;
+        
     }
     aside{
         width: fit-content;
@@ -30,5 +35,8 @@
         width: 300px;
     }
 
+    img{
+        mask-image: linear-gradient(black 50%, transparent);
+    }
     
 </style>

@@ -1,6 +1,9 @@
 <header class="fl-btw">
+    <label for="menu"><i class="bi bi-list"></i></label>
+    <input type="checkbox" id="menu">
     <h2>JuanMen<span>Dev</span></h2>
     <nav class="fl-btw">
+        <label for="menu" id="cerrarMenu" class="fl-btw"><h4>JuanMen<span>Dev</span></h4><i class="bi bi-x-circle-fill"></i></label>
         <ul class="fl-btw">
             <li class="active">
                 <a href="/">Inicio</a>
@@ -11,7 +14,11 @@
                 <hr>
             </li>
             <li>
-                <a href="#Habilidades">Skills</a>
+                <a href="#Habilidades">Habilidades</a>
+                <hr>
+            </li>
+            <li>
+                <a href="#Tecnologias">Tecnologías</a>
                 <hr>
             </li>
             <li>
@@ -24,14 +31,21 @@
 
 <style>
     header{
+        position: sticky;
+        top: 0;
         width: 100%;
-        margin:5px auto;
+        margin: auto;
         padding-block: 16px;
         padding-inline: 10%;
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        flex-wrap: wrap;
     }
 
     nav{
         width: fit-content;
+        flex-wrap: wrap;
+        
     }
     ul{
         list-style: none;
@@ -67,4 +81,64 @@
        }
     }
 
+input{
+    display: none;
+}
+
+label{
+    font-size: 2rem;
+    padding: 16px;
+}
+
+@media screen and (min-width:800px) {
+    label{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    nav{
+        position: fixed;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: start;
+        z-index: 101;
+        height: 100dvh;
+        top: 0;
+        left: 0;
+        background: var(--OneColor);
+        align-items: start !important;
+        padding-block: 16px;
+        box-shadow: 0px 0px 10px 5px #ffffff2a;
+        transform: translateX(-50dvw);
+        opacity: 0;
+        visibility: visible;
+        transition: all 0.3s linear;
+
+        label{
+            width: 100%;
+            padding-inline-end: 16px !important;
+            text-align: end;
+
+            i{
+                color: tomato;
+            }
+        }
+        
+        ul{
+            flex-direction: column !important;
+            justify-content: start !important;
+            align-items: start !important;
+        }
+    }
+
+    input:checked ~ nav{
+        transform: translateX(0px);
+        
+        opacity: 1;
+        visibility: visible;
+        
+    }
+
+}
 </style>

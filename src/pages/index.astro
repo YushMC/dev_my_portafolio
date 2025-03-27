@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FrontPage from "../components/index/FrontPage.astro"
+import Tecnologies from "../components/index/Tecnologies.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,10 +9,106 @@ import FrontPage from "../components/index/FrontPage.astro"
 
 <Layout title="Inicio">
     <FrontPage />
-    <hr class="separator">
-    <article>
-        <h2><span>Skills</span></h2>
-    </article>
+    <h2><span>Proyectos</span></h2>
+    <section>
+        <article class="fl-column glass-effect">
+            <figure class="fl">
+                <img src="/images/proyects/conciencia.webp" alt="Imagen del proyecto Conciencia Del Ser Divino">
+                <figcaption>Página de inicio</figcaption>
+            </figure>
+            <header>
+                <h3>Conciencia del Ser Divino</h3>
+            </header>
+            <p>
+                Sitio web <strong>SSR</strong> enfocado a la meditación que integra un sistema de usuarios y reservaciones, realizado en la empresa <em>Nueva Era Digital</em>
+            </p>
+            <a href="" class="glass-effect"><i class="bi bi-box-arrow-up-right"></i> Ir a Conciencia del Ser Divino</a>
+        </article>
+        <article class="fl-column glass-effect">
+            <figure class="fl">
+                <img src="/images/proyects/landing.webp" alt="Imagen del proyecto Ciudadana del Munod">
+                <figcaption>Página de inicio</figcaption>
+            </figure>
+            <header>
+                <h3>Ciudadana del Mundo</h3>
+            </header>
+            <p>
+                Sitio web estático de tipo <strong>Landing Page</strong> realizado en la empresa <em>Nueva Era Digital</em>
+            </p>
+            <a href="" class="glass-effect"><i class="bi bi-box-arrow-up-right"></i> Ir a Conciencia del Ser Divino</a>
+        </article>
+        <article class=" fl-column glass-effect">
+            <figure class="fl">
+                <img src="/images/proyects/cica.webp" alt="Imagen del proyecto CICA 2023">
+                <figcaption>Página de inicio</figcaption>
+            </figure>
+            <header>
+                <h3>CICA 2023</h3>
+            </header>
+            <p>
+                Sitio web estático utilizado por el <strong>Congreso Interdiciplinario de Cuerpos Académicos</strong>
+            </p>
+            <a href="https://yushmc.github.io/dev_cica2023/" class="glass-effect" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ir a CICA 2023</a>
+        </article>
+        <article class="glass-effect">
+            <figure class="fl">
+                <img src="/images/proyects/launcher.webp" alt="Imagen del proyecto DDSC Web Launcher">
+                <figcaption>Escritorio</figcaption>
+            </figure>
+            <header>
+                <h3>Launcher de Doki Doki Literature Club</h3>
+            </header>
+            <p>
+                Aplicación que <strong>simula ser un sistema operativo</strong>, con el objetivo de mejorar la experiencia de usuario al instalar mods del videojuego Doki Doki Literature Club
+            </p>
+            <a href="https://github.com/YushMC/ddsc_launcher" class="glass-effect" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ver Repositorio</a>
+        </article>
+        <article class="glass-effect">
+            <figure class="fl">
+                <img src="/images/proyects/artGo.webp" alt="Imagen del proyecto ArtGo">
+                <figcaption>Página de Inicio</figcaption>
+            </figure>
+            <header>
+                <h3>ArtGo</h3>
+            </header>
+            <p>
+                Sitio web creado para un <strong>Hackaton</strong> llevada a cabo por el <em>gobierno del estado de Guanajuato, México.</em>
+            </p>
+            <a href="https://yushmc.github.io/ArtGo/" class="glass-effect" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ver ArtGo</a>
+        </article>
+    </section>
+    <Tecnologies />
 </Layout>
 
-<style></style>
+<style>
+    section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 16px;
+    }
+
+    article{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        gap: 16px;
+        figure{
+            width: 100%;
+
+            img{
+                width: 100%;
+                border-radius: 5px;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+            }
+
+            figcaption{
+                text-align: center;
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    
+</style>
