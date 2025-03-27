@@ -20,7 +20,19 @@ html {
 
 body {
   width: 100%;
-  background-color: var(--TwoColor);
+  /* background-color: var(--TwoColor); */
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  background-image: linear-gradient(
+    to right top,
+    #503f5a,
+    #493f60,
+    #3e4067,
+    #2c416d,
+    #034372
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: system-ui;
   color: var(--textColorWhite);
 }
@@ -98,15 +110,16 @@ a {
   transition: all 0.3s linear;
   align-items: center;
   display: flex;
-  gap: 16px;
-  padding: 8px;
+  gap: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
   text-wrap: pretty;
   &:hover {
     filter: drop-shadow(0px 0px 5px #ffffff77);
   }
 
   i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--textColorWhite);
   }
 }

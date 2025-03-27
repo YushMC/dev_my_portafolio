@@ -2,7 +2,7 @@
         <aside class="fl-column">
             <h3 class="subtitle">¡Hola soy,</h3>
             <h1 class="title">JuanMen<span>Dev</span>!</h1>
-            <h4 class="subtitle">Desarrollador <span>Front-End</span></h4>
+            <h4 class="subtitle">Desarrollador Front-End</h4>
             <p>
                 <i>"La interacción y la satisfacción del usuario es lo más gratificante, sobre todo si el proceso lo haces tuyo".</i>
             </p>
@@ -24,7 +24,10 @@
         height: fit-content;
         min-height: 80dvh;
         flex-wrap: wrap;
-        
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s linear;
+        animation: show 1s ease-in-out forwards;
     }
     aside{
         width: fit-content;
@@ -37,6 +40,8 @@
 
     img{
         mask-image: linear-gradient(black 50%, transparent);
+        outline-offset: 60px !important;
+        outline-color:  rgba(255, 255, 255, 0.774)
     }
     
 </style>

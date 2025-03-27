@@ -6,23 +6,19 @@
         <label for="menu" id="cerrarMenu" class="fl-btw"><h4>JuanMen<span>Dev</span></h4><i class="bi bi-x-circle-fill"></i></label>
         <ul class="fl-btw">
             <li class="active">
-                <a href="/">Inicio</a>
+                <a href="/"><i class="bi bi-house"></i>Inicio</a>
                 <hr>
             </li>
             <li>
-                <a href="#Proyectos">Proyectos</a>
+                <a href="#Proyectos"><i class="bi bi-person-workspace"></i> Proyectos</a>
                 <hr>
             </li>
             <li>
-                <a href="#Habilidades">Habilidades</a>
+                <a href="#Habilidades"><i class="bi bi-lightbulb"></i>Habilidades</a>
                 <hr>
             </li>
             <li>
-                <a href="#Tecnologias">Tecnologías</a>
-                <hr>
-            </li>
-            <li>
-                <a href="#Sobre-Mi">Sobre Mí</a>
+                <a href="#Sobre-Mi"><i class="bi bi-person-exclamation"></i>Sobre Mí</a>
                 <hr>
             </li>
         </ul>
@@ -40,6 +36,10 @@
         backdrop-filter: blur(10px);
         z-index: 100;
         flex-wrap: wrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s linear;
+        animation: show 1s ease-in-out forwards;
     }
 
     nav{
