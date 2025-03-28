@@ -41,6 +41,12 @@
   flex-wrap: nowrap;
   gap: 16px;
 }
+.fl-start {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+}
 
 .glass-effect {
   background: rgba(255, 255, 255, 0.075);
@@ -65,8 +71,6 @@ article.glass-effect {
 a.glass-effect {
   filter: none;
   background: var(--OneColor);
-  opacity: 0.7;
-
   &:hover {
     background: var(--TransparentAcentColor);
     transform: scale(1.01);
