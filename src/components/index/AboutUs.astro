@@ -1,0 +1,61 @@
+<article id="Sobre-Mi">
+    <section class="fl-column">
+        <header>
+            <h2>Acerca de JuanMen<span>Dev</span></h2>
+        </header>
+        <p>
+            Soy una persona apasionada al desarrollo web con enfásis en el Front-End, con capacidades de buena
+            comunicación efectiva y abierto a nuevas experiencias. <strong>En camino a especializarse en las Experiencias de Usuario!</strong>
+        </p>
+        <p>
+            Me gusta compartir mis conocimientos con las personas cercanas a mi entorno, <em>me considero una persona responsable y amante de lo que hace</em> 🤞✨
+        </p>
+        <h3><span>Habilidades</span></h3>
+        <ul class="fl-column">
+            <li>Manejo de tecnologías front-end</li>
+            <li>Manejo de software multimedia</li>
+            <li>Manejo de tecnologías para modelado</li>
+            <li>Manejo de software de control de versiones</li>
+            <li>Creación de contenido en redes sociales</li>
+            <li>Conceptos de mercadotecnia digital</li>
+    </section>
+    <figure class="fl-center">
+        <img src="/images/logo.webp" alt="">
+    </figure>
+</article>
+
+<style>
+    article{
+        background: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        padding-block: 64px;
+        padding-inline: 10%;
+        box-shadow: -1px 20px 17px -8px var(--TransparentAcentColor) inset;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    section{
+        width: 70%;
+    }
+    
+    figure{
+        width: 100%;
+        margin: auto;
+    
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    
+    @media screen and (max-width:800px) {
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+</style>

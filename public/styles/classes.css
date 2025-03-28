@@ -34,6 +34,13 @@
   gap: 16px;
 }
 
+.fl-end {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 16px;
+}
+
 .glass-effect {
   background: rgba(255, 255, 255, 0.075);
   backdrop-filter: blur(10px);
@@ -47,9 +54,10 @@
 }
 article.glass-effect {
   padding: 16px !important;
-  border: solid 2px #ffffff07 !important;
-  background: none !important;
+  border: solid 2px #ffffff7a !important;
+
   border-radius: 12px;
+  backdrop-filter: blur(20px);
   filter: none !important;
 }
 
@@ -82,4 +90,10 @@ a.glass-effect {
   font-size: 1.2rem;
   font-weight: 400;
   opacity: 0.9;
+}
+
+.gd-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }

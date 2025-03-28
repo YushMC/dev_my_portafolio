@@ -1,0 +1,73 @@
+<h2 id="Experiencia"><span>Experiencia</span></h2>
+<section class="experiences">
+    <div id="bar">
+    </div>
+    <section class="fl-column">
+        <aside class="fl-column glass-effect">
+            <header class="fl-column">
+                <h4>Nueva Era digital</h4>
+                <h6>17 de Noviembre del 2024 - Actualidad</h6>
+            </header>
+            <p>
+                Periodo de estadías/pasantías donde se realizarón diversos proyectos utilizando tecnologías como: Vue.JS, WordPress, Vite, Astro, JS Vanilla... . Además de configuraciones e instalaciones de maquinas en digital ocean y dockers.
+            </p>
+        </aside>
+    </section>
+</section>
+
+<style>
+    h2{
+        padding-left: 10%;
+    }
+
+.experiences{
+    width: 100%;
+    padding-inline: 20%;
+    height: fit-content;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 3px auto ;
+}
+
+#bar{
+    width: 100%;
+    height: 90%;
+    margin: auto 0;
+    background: var(--textColorWhite);
+    border-radius: 10px;
+    opacity: 0.5;
+    position: relative;
+}
+
+#bar::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: var(--textColorWhite);
+    opacity: 0.5;
+    border-radius: 100%;
+    bottom: -12px;
+    left: -1px;
+}
+
+#bar::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: var(--textColorWhite);
+    opacity: 0.5;
+    border-radius: 100%;
+    bottom: -22px;
+    left: -1px;
+}
+aside{
+    width: 100%;
+}
+
+header h6{
+    opacity: 0.8;
+}
+
+</style>
