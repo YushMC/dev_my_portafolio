@@ -12,12 +12,22 @@
                 Periodo de estadías/pasantías donde se realizarón diversos proyectos utilizando tecnologías como: Vue.JS, WordPress, Vite, Astro, JS Vanilla... . Además de configuraciones e instalaciones de maquinas en digital ocean y dockers.
             </p>
         </aside>
+        <aside class="fl-column glass-effect">
+            <header class="fl-column">
+                <h4>Ingenieria</h4>
+                <h6>1 de Noviembre del 2021 - Actualidad</h6>
+            </header>
+            <p>
+                Estudios Universitarios en la Ingenieria en Entornos Virtuales y Negocios Digitales
+            </p>
+        </aside>
     </section>
 </section>
 
 <style>
     h2{
         padding-left: 10%;
+        padding-top: 10dvh;
     }
 
 .experiences{
@@ -25,13 +35,15 @@
     padding-inline: 20%;
     height: fit-content;
     display: grid;
-    gap: 16px;
+    gap: 24px;
     grid-template-columns: 3px auto ;
+    content-visibility: auto;
+    contain-intrinsic-size: 5dvh 80dvw;
 }
 
 #bar{
     width: 100%;
-    height: 90%;
+    height: 80%;
     margin: auto 0;
     background: var(--textColorWhite);
     border-radius: 10px;
@@ -64,6 +76,19 @@
 }
 aside{
     width: 100%;
+    position: relative;
+    padding-inline: 2rem;
+
+    &::before{
+        position: absolute;
+        clip-path: polygon(100% 100%, 100% 0, 0 50%);
+        top: 0;
+        left: -16px;
+        content: "";
+        background: var(--AcentColor);
+        width: 15px;
+        height: 100%;
+    }
 }
 
 header h6{

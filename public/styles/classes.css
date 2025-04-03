@@ -73,6 +73,11 @@ article.glass-effect:nth-child(even) {
   width: 90%;
   margin: auto;
 }
+@media screen and (max-width: 800px) {
+  article.glass-effect:nth-child(even) {
+    width: 100%;
+  }
+}
 .glass-effect img {
   position: relative;
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
@@ -115,7 +120,7 @@ a.glass-effect {
 
 .gd-auto {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   gap: 16px;
 }

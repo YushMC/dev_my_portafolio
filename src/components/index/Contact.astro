@@ -7,7 +7,7 @@
         </p>
     </aside>
     <a href="mailto:contacto@juanmendev.com" class="glass-effect fl-center">
-        Contactar
+       <i class="bi bi-envelope-fill"></i> Contactar
     </a>
 
 </section>
@@ -19,6 +19,9 @@
         padding-block:24px;
         margin-bottom: 50px !important;
         width: 80%;
+        flex-wrap: wrap;
+        content-visibility: auto;
+        contain-intrinsic-size: 5dvh 80dvw;
     }
 
     aside{
@@ -27,6 +30,12 @@
 
     a{
         width: 20dvw;
+    }
+
+    @media screen and (max-width:800px) {
+        aside, a{
+            width: 100%;
+        }
     }
 
     h3{

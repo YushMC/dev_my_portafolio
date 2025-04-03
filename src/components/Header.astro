@@ -1,9 +1,8 @@
 <header class="fl-btw">
-    <label for="menu"><i class="bi bi-list"></i></label>
+    <label for="menu" id="menuButton"><i class="bi bi-list"></i></label>
     <input type="checkbox" id="menu">
     <h2>JuanMen<span>Dev</span></h2>
     <nav class="fl-btw">
-        <label for="menu" id="cerrarMenu" class="fl-btw"><h4>JuanMen<span>Dev</span></h4><i class="bi bi-x-circle-fill"></i></label>
         <ul class="fl-btw">
             <li class="active">
                 <a href="/#"><i class="bi bi-house"></i>Inicio</a>
@@ -27,7 +26,7 @@
             </li>
         </ul>
     </nav>
-    <label for="menu" id="cerrarMenu2"></label>
+    <label for="menu" id="cerrarMenu2"><i class="bi bi-x-lg"></i></label>
 </header>
 
 <style>
@@ -92,7 +91,6 @@ input{
 
 label{
     font-size: 2rem;
-    padding: 16px;
 }
 
 @media screen and (min-width:800px) {
@@ -106,6 +104,9 @@ label{
 }
 
 @media screen and (max-width:800px) {
+    header{
+        height: 10dvh;
+    }
     #cerrarMenu2{
         position: fixed;
         top: 0;
@@ -118,7 +119,21 @@ label{
         transform: translateX(-50dvw);
         opacity: 0;
         visibility: visible;
+        
+        cursor: pointer;
+        backdrop-filter: blur(10px);
+
+        i{
+            position: absolute;
+            top: 1dvh;
+            right: 10dvw;
+            filter: drop-shadow(5px 5px 10px #000000);
+        }
     }
+    #menuButton{
+        padding:  none !important;
+    }
+
 
     nav{
         position: fixed;
@@ -126,8 +141,8 @@ label{
         flex-direction: column;
         justify-content: start;
         z-index: 102;
-        height: 100dvh;
-        top: 0;
+        height: fit-content;
+        top: 10dvh;
         left: 0;
         background: var(--OneColor);
         align-items: start !important;
@@ -137,12 +152,15 @@ label{
         opacity: 0;
         visibility: visible;
         transition: all 0.3s linear;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: solid 2px var(--TransparentAcentColor);
+        border-left: none;
 
         label{
             width: 100%;
-            padding-inline-end: 16px !important;
             text-align: end;
-
+            
             i{
                 color: tomato;
             }
@@ -154,6 +172,8 @@ label{
             align-items: start !important;
         }
     }
+
+    
 
     input:checked ~ nav,
     input:checked ~ #cerrarMenu2
