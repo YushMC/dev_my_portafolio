@@ -60,15 +60,24 @@
   filter: drop-shadow(0px 0px 5px #ffffff2a);
   transition: all 0.25s linear;
 }
+
 article.glass-effect {
   padding: 16px !important;
-  border: solid 2px #ffffff7a !important;
+  border: solid 2px #ffffff1a !important;
 
   border-radius: 12px;
   backdrop-filter: blur(20px);
   filter: none !important;
 }
-
+article.glass-effect:nth-child(even) {
+  width: 90%;
+  margin: auto;
+}
+.glass-effect img {
+  position: relative;
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  transition: all 0.3s linear;
+}
 a.glass-effect {
   filter: none;
   background: var(--OneColor);
@@ -101,5 +110,12 @@ a.glass-effect {
 .gd-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gd-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
   gap: 16px;
 }
