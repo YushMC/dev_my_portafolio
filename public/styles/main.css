@@ -81,7 +81,7 @@ p {
   height: fit-content;
   text-wrap: pretty;
   line-height: 1.5;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 label:has(:focus:invalid) {

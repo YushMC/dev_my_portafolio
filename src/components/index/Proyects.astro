@@ -47,7 +47,7 @@
         <div class="fl-start">
             <label>HTML</label><label>CSS</label><label>JS</label>
         </div>
-        <a href="https://ciudadanadelmundo.com/" class="glass-effect"  target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ir a Conciencia del Ser Divino</a>
+        <a href="https://ciudadanadelmundo.com/" class="glass-effect"  target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ir a Ciudadana del Mundo</a>
     </article>
     </section>
     
@@ -55,20 +55,20 @@
         <summary class="glass-effect">Ver más proyectos</summary>
         <section class="gd-auto">
             <article class="glass-effect">
-            <figure class="fl">
+                <figure class="fl">
                 <img src="/images/proyects/nueva_era.webp" alt="Imagen del proyecto Nueva Era Digital" decoding="async" loading="lazy" >
                 <figcaption>Página de Inicio</figcaption>
-            </figure>
-            <header>
-                <h3>Nueva Era Digital</h3>
-            </header>
-            <p>
-                Sitio web estático para la empresa <strong>Nueva Era Digital</strong> llevada a cabo en el periodo de estadías (pasantías).
-            </p>
-            <div class="fl-start">
-                <label>Vue.js</label><label>Sass</label>
-            </div>
-            <a href="https://nuevaeradigital.mx/" class="glass-effect" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ver Nueva Era Digital</a>
+                </figure>
+                <header>
+                    <h3>Nueva Era Digital</h3>
+                </header>
+                <p>
+                    Sitio web estático para la empresa <strong>Nueva Era Digital</strong> llevada a cabo en el periodo de estadías (pasantías).
+                </p>
+                <div class="fl-start">
+                    <label>Vue.js</label><label>Sass</label>
+                </div>
+                <a href="https://nuevaeradigital.mx/" class="glass-effect" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Ver Nueva Era Digital</a>
             </article>
             <article class="glass-effect">
             <figure class="fl">
@@ -219,7 +219,7 @@
     article{
         width: 100%;
         display: grid;
-        grid-template-rows: auto auto 1fr auto auto;
+        grid-template-rows: 1fr auto 0.5fr auto auto;
         gap: 16px;
         figure{
             width: 100%;
@@ -233,6 +233,11 @@
 
             figcaption{
                 text-align: center;
+                opacity: 0;
+                transition: all 0.3s linear;
+            }
+
+            &:hover figcaption{
                 opacity: 0.5;
             }
         }
